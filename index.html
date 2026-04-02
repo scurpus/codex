@@ -2,9 +2,67 @@
 <html>
 <head>
   <title>My Wiki</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      background-color: #f4f4f4;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: black;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome to My Wiki</h1>
-  <p>This is my first page 🚀</p>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>📚 My Wiki</h2>
+
+    <a href="index.html">Home</a>
+    <a href="page1.html">Page 1</a>
+    <a href="guide.html">Guide</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Welcome</h1>
+    <p>This is my wiki homepage.</p>
+
+    <h2>About</h2>
+    <p>Use the menu on the left to navigate.</p>
+  </div>
+
 </body>
 </html>
